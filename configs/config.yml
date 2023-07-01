@@ -1,0 +1,15 @@
+port: "8080"
+
+db:
+  host: "localhost"
+  port: "5432"
+  username: "postgres"
+  db_name: "postgres"
+  sslmode: "disable"
+
+nats:
+  cluster_id: "test-cluster"
+  client_id: "client_qw"
+  subject: "foo"
+  q_group: "group"
+  durable_name: "durable"

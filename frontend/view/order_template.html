@@ -1,0 +1,39 @@
+<!--order_template.html-->
+
+<table>
+  <caption>Order Details №{{ .OrderInfo.Order.Id }}</caption>
+  <tr><th>PARAMETERS</th><th>DATA</th></tr>
+  <tr><td colspan="2" style ="text-align: center" >ORDER INFORMATION</td></tr>
+  <tr><td>Order Uid</td><td>{{ .OrderInfo.Order.OrderUid }}</td></tr>
+  <tr><td>Track Number</td><td>{{ .OrderInfo.Order.TrackNumber }}</td></tr>
+  <tr><td>EntryY</td><td>{{ .OrderInfo.Order.Entry }}</td></tr>
+  <tr><td>Locale</td><td>{{ .OrderInfo.Order.Locale }}</td></tr>
+  <tr><td>Internal Signature</td><td>{{ .OrderInfo.Order.InternalSignature }}</td></tr>
+  <tr><td>Customer Id</td><td>{{ .OrderInfo.Order.CustomerId }}</td></tr>
+  <tr><td>Delivery Service</td><td>{{ .OrderInfo.Order.DeliveryService }}</td></tr>
+  <tr><td>Shard Key</td><td>{{ .OrderInfo.Order.ShardKey }}</td></tr>
+  <tr><td>Sm Id</td><td>{{ .OrderInfo.Order.SmId }}</td></tr>
+  <tr><td>Date Created</td><td>{{ .OrderInfo.Order.DateCreated }}</td></tr>
+  <tr><td>Oof Shard</td><td>{{ .OrderInfo.Order.OofShard }}</td></tr>
+
+  <tr><td colspan="2" style ="text-align: center">ORDER DELIVERY</td></tr>
+  <tr><td>Name</td><td>{{ .OrderInfo.Delivery.Name }}</td></tr>
+  <tr><td>Phone</td><td>{{ .OrderInfo.Delivery.Phone }}</td></tr>
+  <tr><td>Zip</td><td>{{ .OrderInfo.Delivery.Zip }}</td></tr>
+  <tr><td>City</td><td>{{ .OrderInfo.Delivery.City }}</td></tr>
+  <tr><td>Address</td><td>{{ .OrderInfo.Delivery.Address }}</td></tr>
+  <tr><td>Region</td><td>{{ .OrderInfo.Delivery.Region }}</td></tr>
+  <tr><td>Email</td><td>{{ .OrderInfo.Delivery.Email }}</td></tr>
+
+  <tr><td colspan="2" style ="text-align: center">ORDER PAYMENT</td></tr>
+  <tr><td>Transaction</td><td>{{ .OrderInfo.Payment.Transaction }}</td></tr>
+  <tr><td>Request Id</td><td>{{ .OrderInfo.Payment.RequestId }}</td></tr>
+  <tr><td>Currency</td><td>{{ .OrderInfo.Payment.Currency }}</td></tr>
+  <tr><td>Provider</td><td>{{ .OrderInfo.Payment.Provider }}</td></tr>
+  <tr><td>Amount</td><td>{{ .OrderInfo.Payment.Amount }}</td></tr>
+  <tr><td>Payment Dt</td><td>{{ .OrderInfo.Payment.PaymentDt }}</td></tr>
+  <tr><td>Bank</td><td>{{ .OrderInfo.Payment.Bank }}</td></tr>
+  <tr><td>Delivery Cost</td><td>{{ .OrderInfo.Payment.DeliveryCost }}</td></tr>
+  <tr><td>Goods Total</td><td>{{ .OrderInfo.Payment.GoodsTotal }}</td></tr>
+  <tr><td>Custom Fee</td><td>{{ .OrderInfo.Payment.CustomFee }}</td></tr>
+</table>
